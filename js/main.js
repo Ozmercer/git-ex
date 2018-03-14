@@ -84,7 +84,7 @@ function renderModals($elModal) {
                 <h2>${proj.name}</h2>
                 <p class="title item-intro text-muted">${proj.title}</p>
                 <img class="img-fluid d-block mx-auto" src="${proj.url[0]}" alt="">
-                <p class="description">${proj.desc} <a href="${proj.link}">Play game</a></p>
+                <p class="description">${proj.desc} <a href="${proj.link}" target="_blank">Play game</a></p>
                 <ul class="list-inline">
                   <li>Date:
                     <span class="date">${proj.publishedAt}</span>

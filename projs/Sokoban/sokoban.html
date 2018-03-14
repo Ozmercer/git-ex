@@ -9,24 +9,30 @@
 
 <body onload="resetGame(board1)">
     <header>
-        <h1>Welcome To Sokoban!</h1>
-        <button class="map1" onclick="resetGame(board1)">Map 1</button>
-        <button class="map2" onclick="resetGame(board2)">Map 2</button>
-        <button class="map3" onclick="resetGame(board3)">Map 3</button>
+        <div class="container head-container">
+            <h1>Welcome To Sokoban!</h1>
+            <button class="map1" onclick="resetGame(board1)">Map 1</button>
+            <button class="map2" onclick="resetGame(board2)">Map 2</button>
+            <button class="map3" onclick="resetGame(board3)">Map 3</button>
+        </div>
     </header>
 
-    <nav>
-        <p>Moves: <span class="moves"></span> </br> Score: <span class="score">150</span></p>
+    <div class="container body-container">
+        <main>
+            <table border="1" cellpadding="10px">
+                <tbody class="board"></tbody>
+            </table>
+            <h2 class="game-over"></h2>
+        </main>
+    </div>
+    
+    <footer>
+        <p>
+            Moves: <span class="moves"></span>
+            &nbsp; Score: <span class="score">150</span>
+        </p> 
         <button class="reset" onclick="resetGame(gameBoard)">Reset Game</button>
-    </nav>
-
-    <main>
-        <table border="1" cellpadding="10px">
-            <tbody class="board"></tbody>
-        </table>
-        <h2 class="game-over"></h2>
-    </main>
-
+    </footer>
 
     <script src="js/utils.js"> </script>
     <script src="js/sokoban.js"></script>

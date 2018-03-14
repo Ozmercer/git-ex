@@ -11,12 +11,24 @@ header {
     margin-bottom: 20px;
 }
 
-nav {
+.head-container {
+    margin: 0 auto;
+    width: 100vw;
+}
+
+.body-container {
+    width: 100vw;
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+
+footer {
     position: absolute;
-    float: left;
-    padding: 1em;
-    border: rgb(62, 128, 0) 5px solid;
+    bottom: 0;
+    border-top: rgb(62, 128, 0) 5px solid;
     background-color: olive;
+    width: 100vw;
 }
 
 table {
@@ -30,13 +42,14 @@ table {
 }
 
 td {
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
     border: forestgreen;
 }
 
 h1 {
     color: rgb(193, 199, 255);
+    margin-top: 0;
 }
 
 h2 {
@@ -93,3 +106,16 @@ button {
     background-color: rgb(147, 185, 108);
 }
 
+/* @media (min-width: 600px) {
+    .head-container {
+        margin: 0 auto;
+        width: 80vw;
+    }
+    
+    .body-container {
+        width: 80vw;
+        display: flex;
+        flex-flow: column wrap;
+        
+    }
+} */

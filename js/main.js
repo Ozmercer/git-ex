@@ -7,7 +7,7 @@ var gProjs = [
         title: 'Better push those boxes',
         desc: 'Push boxes to their targets. try not to get stuck.',
         url: ['img/portfolio/sokoban-full.png', 'img/portfolio/sokoban-thumbnail.png'],
-        link: 'http://127.0.0.1:5500/projs/Sokoban/sokoban.html',
+        link: 'projs/Sokoban/sokoban.html',
         publishedAt: 'Feburary 2018',
         labels: ['Matrixes', 'keyboard events']
     }, {
@@ -16,7 +16,7 @@ var gProjs = [
         title: 'Try not to blow up!',
         desc: 'reveal cells, without hitting the mines.',
         url: ['img/portfolio/minesweeper-full.png', 'img/portfolio/minesweeper-thumbnail.png'],
-        link: 'http://127.0.0.1:5500/projs/Minesweeper/minesweeper.html',
+        link: 'projs/Minesweeper/minesweeper.html',
         publishedAt:  'Feburary 2018',
         labels: ['Matrixes']
     }, {
@@ -25,7 +25,7 @@ var gProjs = [
         title: "Match the logos",
         desc: 'Click on pairs of cards to find two that match.',
         url: ['img/portfolio/memory-game-full.png', 'img/portfolio/memory-game-thumbnail.png'],
-        link: 'http://127.0.0.1:5500/projs/memoryLogos-startHere/game.html',
+        link: 'projs/memoryLogos-startHere/game.html',
         publishedAt:  'March 2018',
         labels: ['Cards', 'Memory']
     }

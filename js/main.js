@@ -28,6 +28,15 @@ var gProjs = [
         link: 'projs/memoryLogos-startHere/game.html',
         publishedAt:  'March 2018',
         labels: ['Cards', 'Memory']
+    }, {
+        id: 4,
+        name: 'Simon Piano',
+        title: "Test your memory",
+        desc: 'Watch the piano play, and try to repeat it.',
+        url: ['img/portfolio/simon-piano-full.png', 'img/portfolio/simon-piano-thumbnail.png'],
+        link: 'projs/SaimonPiano/index.html',
+        publishedAt:  'March 2018',
+        labels: ['Music', 'Memory']
     }
 ]
 

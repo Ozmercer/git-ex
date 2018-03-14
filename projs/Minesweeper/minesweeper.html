@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MineSweeper</title>
+    <link rel="stylesheet" href="css/minesweeper.css">
+</head>
+
+<body onload="resetGame()">
+    <div class="header">
+            <h1>Play MineSweeper!</h1>
+
+            <button class="easy" onclick="resetGame('easy')">Easy</button>
+            <button class="medium" onclick="resetGame('medium')">Medium</button>
+            <button class="hard" onclick="resetGame('hard')">Hard</button>
+        
+            <p class="scores">
+                Mines left: <span class="mine"></span> <br> Flags: <span class="flags"></span> <br>
+                Uncovered Tile: <span class="uncovered"></span>
+            </p>
+    </div>
+    <button onclick="resetGame()">Reset Game</button>
+    <h3 class="smiley">☻</h3>
+    <table border="1" cellpadding="10px">
+        <tbody class="board"></tbody>
+    </table>
+    <p>Time Played: <span class="timer">0</span></p>
+    <h2 class="game-over"></h2>
+
+    <script src="js/utils.js"></script>
+    <script src="js/minesweeper.js"></script>
+</body>
+
+</html>

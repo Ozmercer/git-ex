@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(214, 161, 136);
+    text-align: center;
+}
+
+table {
+    background-color: darkblue;
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em
+}
+
+td {
+    background-color: rgb(151, 205, 207);
+    height: 1em;
+    width: 1em;
+    overflow: hidden;
+    display: inline-flex;
+    white-space: nowrap;
+}
+
+h3 {
+    font-size: 2em;
+    margin: 0.2em;
+    color: rgb(255, 255, 0);
+}
+
+.cover {
+    visibility: hidden;
+}
+
+.gray {
+    background-color: gray
+}
+
+.loose {
+    color: black;
+}
+
+.gray.flag {
+    background-image: url('../img/flag.png');
+    background-size: cover;
+}
+.header {
+    background-color: indigo;
+    border-bottom: rgb(0, 197, 0) solid 10px;
+    margin: 10px;
+    color: dodgerblue;
+}
+
+.bomb {
+    background-color: rgb(134, 56, 56);   
+}
+
+.num1 {
+    color: blue;
+}
+.num2 {
+    color: green;
+}
+.num3 {
+    color: red;
+}
+.num4 {
+    color: purple;
+}
+.num5 {
+    color: brown;
+}
+.num6 {
+    color: turquoise;
+}
+.num7 {
+    color: magenta;
+}
+.num8 {
+    color: black;
+}

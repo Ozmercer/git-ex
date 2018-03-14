@@ -1,0 +1,95 @@
+body {
+    align-self: auto;
+    background-color: forestgreen;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(105, 175, 0);
+    border-bottom: rgb(0, 97, 57) solid 10px;
+    margin-bottom: 20px;
+}
+
+nav {
+    position: absolute;
+    float: left;
+    padding: 1em;
+    border: rgb(62, 128, 0) 5px solid;
+    background-color: olive;
+}
+
+table {
+    position: relative;
+    margin: auto;
+    background-color: rgb(129, 96, 13);
+    border-collapse: collapse;
+    border: forestgreen;
+    background-image: url('../img/floor.jpg');
+    background-size: cover;
+}
+
+td {
+    height: 20px;
+    width: 20px;
+    border: forestgreen;
+}
+
+h1 {
+    color: rgb(193, 199, 255);
+}
+
+h2 {
+    color: purple;
+}
+
+.wall {
+    /* background-color: gray; */
+    background-image: url('../img/wall.jpg');
+    background-size: cover;
+
+}
+
+.box {
+    background-image: url('../img/crate.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.player {
+    background-image: url('../img/player.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.target {
+    background-image: url('../img/target.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.target.box {
+    background-image: url('../img/crate.png'), url('../img/green-target.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: color-dodge
+}
+
+.target.player {
+    background-image: url('../img/player.png'), url('../img/target.png');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: lighten;
+}
+
+.empty {
+    background-color: forestgreen;
+}
+
+button {
+    margin: 10px;
+    background-color: rgb(147, 185, 108);
+}
+

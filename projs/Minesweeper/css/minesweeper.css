@@ -1,6 +1,46 @@
 body {
     background-color: rgb(214, 161, 136);
     text-align: center;
+    margin: 0;
+}
+header {
+    background-color: indigo;
+    border-bottom: rgb(0, 197, 0) solid 10px;
+    margin: 10px;
+    color: dodgerblue;
+    margin: 0;
+    padding: 10px;
+}
+h1 {
+    margin-top: 0;
+}
+
+footer {
+    bottom: 0;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background-color: indigo;
+    border-bottom: rgb(0, 197, 0) solid 10px;
+    color: dodgerblue;
+}
+
+.main-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.scores-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+
+.scores {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid indigo;
 }
 
 table {
@@ -26,6 +66,10 @@ h3 {
     color: rgb(255, 255, 0);
 }
 
+button {
+    margin: 10px;
+}
+
 .cover {
     visibility: hidden;
 }
@@ -41,12 +85,6 @@ h3 {
 .gray.flag {
     background-image: url('../img/flag.png');
     background-size: cover;
-}
-.header {
-    background-color: indigo;
-    border-bottom: rgb(0, 197, 0) solid 10px;
-    margin: 10px;
-    color: dodgerblue;
 }
 
 .bomb {

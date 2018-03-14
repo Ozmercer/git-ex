@@ -8,25 +8,40 @@
 </head>
 
 <body onload="resetGame()">
-    <div class="header">
-            <h1>Play MineSweeper!</h1>
+    <header>
+        <h1>Play MineSweeper!</h1>
 
-            <button class="easy" onclick="resetGame('easy')">Easy</button>
-            <button class="medium" onclick="resetGame('medium')">Medium</button>
-            <button class="hard" onclick="resetGame('hard')">Hard</button>
+        <button class="easy" onclick="resetGame('easy')">Easy</button>
+        <button class="medium" onclick="resetGame('medium')">Medium</button>
+        <button class="hard" onclick="resetGame('hard')">Hard</button>
+
         
-            <p class="scores">
-                Mines left: <span class="mine"></span> <br> Flags: <span class="flags"></span> <br>
-                Uncovered Tile: <span class="uncovered"></span>
-            </p>
+    </header>
+
+    <main>
+        <div class="container main-container">
+        <div class="game-board">
+            <h3 class="smiley">☻</h3>
+            <table border="1" cellpadding="10px">
+                <tbody class="board"></tbody>
+            </div>
+        </table>
     </div>
-    <button onclick="resetGame()">Reset Game</button>
-    <h3 class="smiley">☻</h3>
-    <table border="1" cellpadding="10px">
-        <tbody class="board"></tbody>
-    </table>
-    <p>Time Played: <span class="timer">0</span></p>
-    <h2 class="game-over"></h2>
+    <div class="container scores-container">
+        <div class="scores">Mines left: <span class="mine"></span></div>
+        <div class="scores">Flags: <span class="flags"></span></div>
+        <div class="scores">Uncovered Tile: <span class="uncovered"></span></div>
+        <div class="scores">Time Played: <span class="timer">0</span></div>
+
+
+    </div>
+</main>
+
+<button onclick="resetGame()">Reset Game</button>
+    <footer>
+        <h2 class="game-over"></h2>
+
+    </footer>
 
     <script src="js/utils.js"></script>
     <script src="js/minesweeper.js"></script>

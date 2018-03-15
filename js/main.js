@@ -1,44 +1,25 @@
 console.log('Starting up');
 
+var gNextId = 1;
 var gProjs = [
-    {
-        id: 1,
-        name: 'Sokoban',
-        title: 'Better push those boxes',
-        desc: 'Push boxes to their targets. try not to get stuck.',
-        url: ['img/portfolio/sokoban-full.png', 'img/portfolio/sokoban-thumbnail.png'],
-        link: 'projs/Sokoban/sokoban.html',
-        publishedAt: 'Feburary 2018',
-        labels: ['Matrixes', 'keyboard events']
-    }, {
-        id: 2,
-        name: 'Minesweeper',
-        title: 'Try not to blow up!',
-        desc: 'reveal cells, without hitting the mines.',
-        url: ['img/portfolio/minesweeper-full.png', 'img/portfolio/minesweeper-thumbnail.png'],
-        link: 'projs/Minesweeper/minesweeper.html',
-        publishedAt:  'Feburary 2018',
-        labels: ['Matrixes']
-    }, {
-        id: 3,
-        name: 'Memory Logos',
-        title: "Match the logos",
-        desc: 'Click on pairs of cards to find two that match.',
-        url: ['img/portfolio/memory-game-full.png', 'img/portfolio/memory-game-thumbnail.png'],
-        link: 'projs/memoryLogos-startHere/game.html',
-        publishedAt:  'March 2018',
-        labels: ['Cards', 'Memory']
-    }, {
-        id: 4,
-        name: 'Simon Piano',
-        title: "Test your memory",
-        desc: 'Watch the piano play, and try to repeat it.',
-        url: ['img/portfolio/simon-piano-full.png', 'img/portfolio/simon-piano-thumbnail.png'],
-        link: 'projs/SaimonPiano/index.html',
-        publishedAt:  'March 2018',
-        labels: ['Music', 'Memory']
-    }
+    getProj('Sokoban','sokoban', sokobanTitle, sokobanDesc,['Matrixes', 'keyboard events']), 
+    getProj('Minesweeper','minesweeper', minesweeprTitle, minesweeprDesc, ['Matrixes']), 
+    getProj('Memory Logos','memory-logo', memoryLogosTitle, memoryLogosDesc, ['Cards', 'Memory']), 
+    getProj('Simon Piano','simon-piano', SimonPianoTitle, SimonPianoDesc, ['Music', 'Memory']), 
+    getProj('Book Shop','book-shop', bookShopTitle, bookShopDesc, ['library', 'matrix']), 
 ]
+function getProj(name,snakeName,title,desc,labels) {
+    return newProj = {
+        id: gNextId++,
+        name: name,
+        title: title,
+        url: [`img/portfolio/${snakeName}-full.png`, `img/portfolio/${snakeName}-thumbnail.png`],
+        link: `projs/${snakeName}/index.html`,
+        publishedAt:  'March 2018',
+        labels: labels,
+    };
+
+}
 
 function initPage() {
     renderPortfolios($('.portfolio-container'));
